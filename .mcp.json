@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "torii": {
+      "type": "http",
+      "url": "https://mcp.torii.so/mcp"
+    }
+  }
+}
