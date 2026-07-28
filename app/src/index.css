@@ -1,0 +1,72 @@
+/* Page shell only. Every Torii component ships its own styles. */
+
+body {
+  margin: 0;
+  background: #f6f6f7;
+  color: #18181b;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+/*
+ * `dark` on <html> is set by src/theme.ts and is the same hook the SDK's dark
+ * token block is scoped to, so the shell and the cards can never disagree.
+ */
+html.dark body {
+  background: #09090b;
+  color: #fafafa;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+/*
+ * The SDK's impersonation banner is `position: fixed` at the top of the
+ * viewport (`.torii-impersonation-banner`), so it covers whatever the shell
+ * draws first unless the shell reserves room for it. The banner lives inside
+ * the provider's `div.torii`, which wraps `.page`, so `:has()` can key off it
+ * without threading `isImpersonating` through the layout.
+ */
+.torii:has(.torii-impersonation-banner) .page {
+  padding-top: 3rem;
+}
+
+/* Narrow viewports wrap the banner text onto a second line. */
+@media (max-width: 30rem) {
+  .torii:has(.torii-impersonation-banner) .page {
+    padding-top: 4.5rem;
+  }
+}
+
+.controls {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.controls button {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid currentColor;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.controls button:hover {
+  opacity: 1;
+}
+
+.status {
+  margin: 0;
+  opacity: 0.7;
+}

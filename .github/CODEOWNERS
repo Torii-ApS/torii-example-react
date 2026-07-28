@@ -1,0 +1,3 @@
+# Every path, so the branch ruleset's code-owner review requirement always has
+# an owner to ask. Without this file the requirement silently matches nobody.
+*	@kris098e
