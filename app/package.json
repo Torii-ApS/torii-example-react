@@ -10,7 +10,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@torii-js/torii-react": "^0.3.0",
+    "@torii-js/torii-react": "^0.4.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },

@@ -1,9 +1,9 @@
 import {
-  AuthCard,
   AuthLoading,
   LanguageSelector,
   SignedIn,
   SignedOut,
+  SignIn,
   UserDashboard,
 } from '@torii-js/torii-react';
 import { useAppearance } from './theme';
@@ -29,10 +29,11 @@ export default function App() {
         <p className="status">…</p>
       </AuthLoading>
 
-      {/* AuthCard, not SignIn: its footer links flip to sign-up and
-          forgot-password in place, so one mount covers every credential screen. */}
+      {/* One mount covers every credential screen: <SignIn>'s footer links flip
+          to sign-up and forgot-password in place. Open on registration instead
+          with defaultMode="sign-up", or keep it sign-in-only with hideSignUp. */}
       <SignedOut>
-        <AuthCard defaultMode="login" />
+        <SignIn />
       </SignedOut>
 
       {/* The appearance props are what add the profile's Preferences section. */}

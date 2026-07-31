@@ -16,7 +16,7 @@ In the Torii dashboard, add `http://localhost:5173` under
 | File | Role |
 |------|------|
 | `src/main.tsx` | `<ToriiProvider>`: publishable key, `proxyOrigin`, `languages={['en','da']}` |
-| `src/App.tsx` | `<AuthLoading>` / `<SignedOut><AuthCard>` / `<SignedIn><UserDashboard>` + `<LanguageSelector>` |
+| `src/App.tsx` | `<AuthLoading>` / `<SignedOut><SignIn>` / `<SignedIn><UserDashboard>` + `<LanguageSelector>` |
 | `src/labels.ts` | en/da copy for this app's own chrome (the SDK translates its own) |
 | `vite.config.ts` | `/_torii` dev proxy that keeps the session cookie first-party |
 
