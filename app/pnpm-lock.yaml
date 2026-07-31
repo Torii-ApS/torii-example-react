@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@torii-js/torii-react':
-        specifier: ^0.3.0
-        version: 0.3.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        specifier: ^0.4.0
+        version: 0.4.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react:
         specifier: ^19.2.8
         version: 19.2.8
@@ -157,11 +157,11 @@ packages:
   '@rolldown/pluginutils@1.0.1':
     resolution: {integrity: sha512-2j9bGt5Jh8hj+vPtgzPtl72j0yRxHAyumoo6TNfAjsLB04UtpSvPbPcDcBMxz7n+9CYB0c1GxQFxYRg2jimqGw==}
 
-  '@torii-js/core@0.3.0':
-    resolution: {integrity: sha512-dEQ1hGUOd9C81tSdbe/tgMxrVeREGuJId4qXNR1zvsJdUY4WWdnVPKsXTsHS2TjoFtG+MlcvnlU/444dOUMLSA==}
+  '@torii-js/core@0.4.0':
+    resolution: {integrity: sha512-Kdb5AUH3KmXh/erZuSZweiETU8df3feRNDeBd7NGZMgLzy8FhiNtWXG/W4fBuvBluYEwfQekHlYakcRcTr4LkQ==}
 
-  '@torii-js/torii-react@0.3.0':
-    resolution: {integrity: sha512-1IdcrjpNf4Z7b8OhNoKkNLInhMutxLf/tHUViGzeT6zIi9PACdl+8kz73eKTgsJIddF6B2jODpfQecKdBe9z4w==}
+  '@torii-js/torii-react@0.4.0':
+    resolution: {integrity: sha512-menXq0BzsFv5usIpYuS4XN4BJ9ftRrdjuplpvBU1WvuWkh3gPbw37xa4jrkttUuwsQxxMgj7/+xwjqmWVpdm2g==}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
       react-dom: ^18.0.0 || ^19.0.0
@@ -583,12 +583,12 @@ snapshots:
 
   '@rolldown/pluginutils@1.0.1': {}
 
-  '@torii-js/core@0.3.0': {}
+  '@torii-js/core@0.4.0': {}
 
-  '@torii-js/torii-react@0.3.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
+  '@torii-js/torii-react@0.4.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
     dependencies:
       '@noble/curves': 2.2.0
-      '@torii-js/core': 0.3.0
+      '@torii-js/core': 0.4.0
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
 
